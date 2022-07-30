@@ -5,6 +5,7 @@
 package com.tix.login;
 
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -13,12 +14,15 @@ import java.awt.Color;
 public class LoginUI extends javax.swing.JFrame {
 
     private int xMouse, yMouse;
+    ImageIcon img = new ImageIcon(".\\src\\main\\resources\\com\\tix\\images\\favicon.png");
 
     /**
      * Creates new form LoginUI
      */
     public LoginUI() {
         initComponents();
+        setLocationRelativeTo(null);
+        setIconImage(img.getImage());
     }
 
     /**
