@@ -13,16 +13,13 @@ import javax.swing.ImageIcon;
  */
 public class LoginUI extends javax.swing.JFrame {
 
-    private int xMouse, yMouse;
-    ImageIcon img = new ImageIcon(".\\src\\main\\resources\\com\\tix\\images\\favicon.png");
+    
 
     /**
      * Creates new form LoginUI
      */
     public LoginUI() {
         initComponents();
-        setLocationRelativeTo(null);
-        setIconImage(img.getImage());
     }
 
     /**
@@ -34,6 +31,7 @@ public class LoginUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        img = new ImageIcon(".\\src\\main\\resources\\com\\tix\\images\\favicon.png");
         background = new javax.swing.JPanel();
         title_lbl = new javax.swing.JLabel();
         icon_image = new javax.swing.JLabel();
@@ -58,6 +56,8 @@ public class LoginUI extends javax.swing.JFrame {
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(800, 500));
         setResizable(false);
+        setLocationRelativeTo(null);
+        setIconImage(img.getImage());
 
         background.setBackground(new java.awt.Color(255, 255, 255));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -160,11 +160,7 @@ public class LoginUI extends javax.swing.JFrame {
                 user_txtMousePressed(evt);
             }
         });
-        user_txt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                user_txtActionPerformed(evt);
-            }
-        });
+        
         background.add(user_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 390, 30));
 
         password_lbl.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
@@ -235,10 +231,6 @@ public class LoginUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void user_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_user_txtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_user_txtActionPerformed
-
     private void headerMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headerMousePressed
         xMouse = evt.getX();
         yMouse = evt.getY();
@@ -300,6 +292,8 @@ public class LoginUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private int xMouse, yMouse;
+    private ImageIcon img;
     private javax.swing.JPanel background;
     private javax.swing.JLabel city_image;
     private javax.swing.JPanel exit_btn;
