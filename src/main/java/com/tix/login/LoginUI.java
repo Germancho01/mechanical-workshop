@@ -20,6 +20,7 @@ public class LoginUI extends javax.swing.JFrame {
      */
     public LoginUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -52,11 +53,9 @@ public class LoginUI extends javax.swing.JFrame {
         login_txt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(800, 500));
         setResizable(false);
-        setLocationRelativeTo(null);
         setIconImage(img.getImage());
 
         background.setBackground(new java.awt.Color(255, 255, 255));
